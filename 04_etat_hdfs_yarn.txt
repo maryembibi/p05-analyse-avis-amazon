@@ -1,0 +1,31 @@
+Commande : docker compose ps   (03/11/2026)
+
+NAME              IMAGE                 COMMAND                  SERVICE           CREATED              STATUS              PORTS
+datanode          apache/hadoop:3.3.6   "/usr/local/bin/dumb…"   datanode          About a minute ago   Up About a minute
+namenode          apache/hadoop:3.3.6   "/usr/local/bin/dumb…"   namenode          About a minute ago   Up About a minute   0.0.0.0:9870->9870/tcp
+nodemanager       apache/hadoop:3.3.6   "/usr/local/bin/dumb…"   nodemanager       About a minute ago   Up About a minute
+resourcemanager   apache/hadoop:3.3.6   "/usr/local/bin/dumb…"   resourcemanager   About a minute ago   Up About a minute   0.0.0.0:8088->8088/tcp
+
+Commande : docker exec namenode hdfs dfsadmin -report   (extrait)
+
+Live datanodes (1):
+
+Name: 172.19.0.3:9866 (datanode.p05-hadoop_default)
+Hostname: datanode
+Decommission Status : Normal
+Configured Capacity: 1081101176832 (1006.85 GB)
+DFS Used: 24576 (24 KB)
+Non DFS Used: 5480992768 (5.10 GB)
+DFS Remaining: 1020627804160 (950.53 GB)
+DFS Used%: 0.00%
+DFS Remaining%: 94.41%
+Last contact: Tue Nov 03 12:07:06 UTC 2026
+Last Block Report: Tue Nov 03 12:02:19 UTC 2026
+Num of Blocks: 0
+
+Commande : docker exec resourcemanager yarn node -list
+
+2026-11-03 12:07:20 INFO  DefaultNoHARMFailoverProxyProvider:64 - Connecting to ResourceManager at resourcemanager/172.19.0.4:8032
+Total Nodes:1
+         Node-Id             Node-State Node-Http-Address       Number-of-Running-Containers
+nodemanager:41535               RUNNING  nodemanager:8042

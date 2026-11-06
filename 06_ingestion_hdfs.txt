@@ -1,0 +1,17 @@
+Ingestion des zones bronze et silver dans HDFS (03/11/2026)
+
+PS C:\big_data_proj> docker exec namenode hdfs dfs -mkdir -p /p05/bronze /p05/silver
+PS C:\big_data_proj> docker exec namenode hdfs dfs -put /projet/Appliances.jsonl.gz /projet/profil_dataset.json /p05/bronze/
+PS C:\big_data_proj> docker exec namenode hdfs dfs -put /projet/silver/lot5pct_nlp-v1_20261103-112818 /p05/silver/
+PS C:\big_data_proj> docker exec namenode hdfs dfs -ls -R /p05
+drwxr-xr-x   - hadoop supergroup          0 2026-11-03 12:32 /p05/bronze
+-rw-r--r--   1 hadoop supergroup  270209794 2026-11-03 12:32 /p05/bronze/Appliances.jsonl.gz
+-rw-r--r--   1 hadoop supergroup       2503 2026-11-03 12:32 /p05/bronze/profil_dataset.json
+drwxr-xr-x   - hadoop supergroup          0 2026-11-03 12:33 /p05/silver
+drwxr-xr-x   - hadoop supergroup          0 2026-11-03 12:33 /p05/silver/lot5pct_nlp-v1_20261103-112818
+-rw-r--r--   1 hadoop supergroup      41595 2026-11-03 12:33 /p05/silver/lot5pct_nlp-v1_20261103-112818/anomalies.tsv
+-rw-r--r--   1 hadoop supergroup       2207 2026-11-03 12:33 /p05/silver/lot5pct_nlp-v1_20261103-112818/manifeste.json
+drwxr-xr-x   - hadoop supergroup          0 2026-11-03 12:33 /p05/silver/lot5pct_nlp-v1_20261103-112818/notes
+-rw-r--r--   1 hadoop supergroup    4212120 2026-11-03 12:33 /p05/silver/lot5pct_nlp-v1_20261103-112818/notes/part-00000.tsv
+drwxr-xr-x   - hadoop supergroup          0 2026-11-03 12:33 /p05/silver/lot5pct_nlp-v1_20261103-112818/tokens
+-rw-r--r--   1 hadoop supergroup   15480517 2026-11-03 12:33 /p05/silver/lot5pct_nlp-v1_20261103-112818/tokens/part-00000.tsv

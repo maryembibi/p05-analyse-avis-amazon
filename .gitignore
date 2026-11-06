@@ -1,0 +1,9 @@
+# Donnees : non versionnees (volume, conditions d'usage)
+*.jsonl.gz
+silver/
+echantillon_temoin.json
+
+# Builds et caches
+target/
+__pycache__/
+*.pyc

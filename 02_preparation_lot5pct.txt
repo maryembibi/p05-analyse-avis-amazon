@@ -1,0 +1,36 @@
+Commande : py preparer_silver.py Appliances.jsonl.gz --pourcentage 5   (03/11/2026)
+
+  ... 200,000 lignes lues, 10,271 avis retenus
+  ... 400,000 lignes lues, 20,427 avis retenus
+  ... 600,000 lignes lues, 30,680 avis retenus
+  ... 800,000 lignes lues, 40,720 avis retenus
+  ... 1,000,000 lignes lues, 52,322 avis retenus
+  ... 1,200,000 lignes lues, 61,713 avis retenus
+  ... 1,400,000 lignes lues, 71,964 avis retenus
+  ... 1,600,000 lignes lues, 81,317 avis retenus
+  ... 1,800,000 lignes lues, 90,934 avis retenus
+  ... 2,000,000 lignes lues, 99,240 avis retenus
+
+=== PREPARATION TERMINEE : lot5pct_nlp-v1_20261103-112818 ===
+Lignes lues               : 2,128,605
+Hors lot (5 % produits) : 2,022,176
+Rejetes                   : 0  {}
+Doublons                  : 1,126
+Avis retenus (notes)      : 105,303
+Avis retenus (tokens)     : 105,202  (sans token : 101)
+N produits (pour MR2)     : 4,743
+Tokens / vocabulaire      : 1,923,280 / 31,605
+Periode                   : 2002-11 -> 2023-09
+Duree                     : 53.8 s
+
+Sorties dans : silver\lot5pct_nlp-v1_20261103-112818
+
+--- Apercu des fichiers silver (3 premieres lignes) ---
+PS C:\big_data_proj> Get-Content silver\lot5pct_nlp-v1_20261103-112818\tokens\part-00000.tsv -TotalCount 3
+24836edb4dd97546        B08XP29S76      easy peasy everything great easy trim stove counter design thanks
+f621e469e144ae85        B084L49119      single cup reusable little disappointed not quite fit single cup maker really slam top eventually eh like puncture needle maker tiny bit recommend cup liners brews lighter commercial single coffee cups opinion ground coffee worth try keep single use cups garbage know not fit single cup makers maker use not national brand said never hesitate update reviews new info seem useful
+4654f69a7ea34c0f        B01KIG21AW      love thing love product keeps eggs save absolutely secure plus put cans top
+PS C:\big_data_proj> Get-Content silver\lot5pct_nlp-v1_20261103-112818\notes\part-00000.tsv -TotalCount 3
+24836edb4dd97546        B08XP29S76      2019-08 5.0
+f621e469e144ae85        B084L49119      2022-04 4.0
+4654f69a7ea34c0f        B01KIG21AW      2017-05 5.0

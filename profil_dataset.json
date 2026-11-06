@@ -1,0 +1,126 @@
+{
+  "fichier": "Appliances.jsonl.gz",
+  "taille_octets": 270209794,
+  "sha256": "150f209befceaa6f837abc997065b2d251034bbbda19bebc4ad56dac779730c2",
+  "date_analyse_utc": "2026-11-01T15:44:30+00:00",
+  "lignes_lues": 2128605,
+  "limite_max_lines": null,
+  "avis_rejetes": 0,
+  "rejets_par_motif": {},
+  "doublons_supprimes": 22657,
+  "avis_valides_uniques": 2105948,
+  "taux_conservation": 0.9894,
+  "schema_effectif": {
+    "rating": {
+      "presence": 2128605,
+      "type": "float"
+    },
+    "title": {
+      "presence": 2128605,
+      "type": "str"
+    },
+    "text": {
+      "presence": 2128605,
+      "type": "str"
+    },
+    "images": {
+      "presence": 2128605,
+      "type": "list"
+    },
+    "asin": {
+      "presence": 2128605,
+      "type": "str"
+    },
+    "parent_asin": {
+      "presence": 2128605,
+      "type": "str"
+    },
+    "user_id": {
+      "presence": 2128605,
+      "type": "str"
+    },
+    "timestamp": {
+      "presence": 2128605,
+      "type": "int"
+    },
+    "helpful_vote": {
+      "presence": 2128605,
+      "type": "int"
+    },
+    "verified_purchase": {
+      "presence": 2128605,
+      "type": "bool"
+    }
+  },
+  "unite_timestamp": {
+    "ms": 2128605
+  },
+  "periode": {
+    "min": "2000-10-23",
+    "max": "2023-09-12"
+  },
+  "avis_par_annee": {
+    "2000": 1,
+    "2002": 1,
+    "2003": 8,
+    "2004": 16,
+    "2005": 77,
+    "2006": 180,
+    "2007": 604,
+    "2008": 872,
+    "2009": 1515,
+    "2010": 3500,
+    "2011": 7541,
+    "2012": 15076,
+    "2013": 43133,
+    "2014": 76590,
+    "2015": 121465,
+    "2016": 152424,
+    "2017": 168122,
+    "2018": 187797,
+    "2019": 258330,
+    "2020": 307909,
+    "2021": 341380,
+    "2022": 296199,
+    "2023": 123208
+  },
+  "distribution_notes": {
+    "1": 247203,
+    "2": 78747,
+    "3": 102963,
+    "4": 206102,
+    "5": 1470933
+  },
+  "produits_parent_asin": 94319,
+  "variantes_asin": 104237,
+  "produits_avec_20_avis_ou_plus": 14526,
+  "avis_couverts_par_ces_produits": 1803297,
+  "top5_produits_les_plus_commentes": [
+    [
+      "B0B3DB5HTC",
+      11906
+    ],
+    [
+      "B07RNJY499",
+      11483
+    ],
+    [
+      "B07WTXWC32",
+      8420
+    ],
+    [
+      "B08YBGCNHP",
+      7257
+    ],
+    [
+      "B000AST3AK",
+      6978
+    ]
+  ],
+  "mots_par_avis": {
+    "mediane": 20,
+    "moyenne": 35.6
+  },
+  "part_verified_purchase": 0.9584,
+  "part_helpful_vote_positif": 0.1919
+}

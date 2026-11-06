@@ -1,0 +1,54 @@
+{
+  "run_id": "lot5pct_nlp-v1_20261103-112818",
+  "preparateur": "prep-v1",
+  "debut_utc": "2026-11-03T11:28:18+00:00",
+  "duree_secondes": 53.8,
+  "source": {
+    "fichier": "Appliances.jsonl.gz",
+    "taille_octets": 270209794,
+    "sha256": "150f209befceaa6f837abc997065b2d251034bbbda19bebc4ad56dac779730c2"
+  },
+  "selection": {
+    "regle": "md5(parent_asin)[:8] en entier % 10000 < pourcentage * 100",
+    "pourcentage_produits": 5.0,
+    "max_lines": null
+  },
+  "regle_dedoublonnage": "blake2b-64(user_id|parent_asin|timestamp|title+text) ; user_id non conserve",
+  "parametres_nlp": {
+    "version": "nlp-v1",
+    "champs_texte": "title + ' ' + text",
+    "unicode": "html.unescape, NFKD puis suppression des accents, minuscules",
+    "nettoyage": "balises HTML (<br />) et URL remplacees par des espaces",
+    "contractions": "won't->will not, can't/cannot->can not, n't->not ; 's 're 've 'll 'd 'm supprimes",
+    "tokenisation": "regex [a-z0-9]+ (caracteres non latins = separateurs)",
+    "negations": "conservees : neither, never, no, nobody, none, nor, not, nothing, nowhere",
+    "stop_words": "liste anglaise interne (127 mots, negations exclues)",
+    "nombres": "tokens purement numeriques supprimes ; alphanumeriques (ex. references) conserves",
+    "longueur_min": 2,
+    "longueur_max": 30,
+    "expressions_composees": "non traitees en v1 (unigrammes uniquement)"
+  },
+  "compteurs": {
+    "lignes_lues": 2128605,
+    "hors_lot": 2022176,
+    "rejetes": 0,
+    "rejets_par_motif": {},
+    "doublons": 1126,
+    "avis_retenus_notes": 105303,
+    "avis_sans_token_apres_nlp": 101,
+    "avis_retenus_tokens": 105202,
+    "total_tokens": 1923280,
+    "taille_vocabulaire": 31605
+  },
+  "N_produits_avec_document_textuel": 4743,
+  "produits_flux_notes": 4744,
+  "periode_mois": {
+    "min": "2002-11",
+    "max": "2023-09"
+  },
+  "sorties_sha256": {
+    "tokens/part-00000.tsv": "0fd0dc45ead388d75eb4a894eeeb45fd01b67195b3b82e599d743ce7c37e4eda",
+    "notes/part-00000.tsv": "05ae75b4ded7bb3077f7678d4449fd0389fd05b6a9a8d5922c2bb3443de4deb1",
+    "anomalies.tsv": "4b46f93d2da22c452585ab2f27ef8fd6559edf14bb1ba83ac8503724572bbb96"
+  }
+}

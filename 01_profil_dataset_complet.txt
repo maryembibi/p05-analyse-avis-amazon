@@ -1,0 +1,20 @@
+Commande : py explorer_dataset.py Appliances.jsonl.gz   (fichier complet, 01/11/2026)
+
+  ... 1,800,000 lignes lues
+  ... 2,000,000 lignes lues
+
+=== PROFIL DU DATASET ===
+Lignes lues            : 2,128,605
+Avis rejetes           : 0  {}
+Doublons supprimes     : 22,657
+Avis valides uniques   : 2,105,948  (conservation 0.9894)
+Champs rencontres      : rating, title, text, images, asin, parent_asin, user_id, timestamp, helpful_vote, verified_purchase
+Unite du timestamp     : {'ms': 2128605}
+Periode couverte       : 2000-10-23 -> 2023-09-12
+Distribution des notes : {1: 247203, 2: 78747, 3: 102963, 4: 206102, 5: 1470933}
+Produits (parent_asin) : 94,319   variantes (asin) : 104,237
+Produits >= 20 avis    : 14,526 (couvrent 1,803,297 avis)
+Top 5 produits         : [('B0B3DB5HTC', 11906), ('B07RNJY499', 11483), ('B07WTXWC32', 8420), ('B08YBGCNHP', 7257), ('B000AST3AK', 6978)]
+Mots par avis          : {'mediane': 20, 'moyenne': 35.6}
+
+Fichiers ecrits : profil_dataset.json, echantillon_temoin.json

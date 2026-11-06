@@ -1,0 +1,37 @@
+PS C:\big_data_proj> docker compose up -d
+[+] Running 26/26
+ ✔ namenode Pulled                                                                                               569.3s
+ ✔ nodemanager Pulled                                                                                            569.3s
+ ✔ resourcemanager Pulled                                                                                        569.3s
+   ✔ 8ba884070f61 Pull complete                                                                                   82.8s
+   ✔ 93cf21fbbef2 Pull complete                                                                                   82.9s
+   ✔ c778ba593b2f Pull complete                                                                                  239.7s
+   ✔ 782cc61249e1 Pull complete                                                                                  239.9s
+   ✔ 62371aa21ed7 Pull complete                                                                                  239.9s
+   ✔ a99f0329f9e1 Pull complete                                                                                  239.9s
+   ✔ a3de4f0aebed Pull complete                                                                                  240.0s
+   ✔ 126875c5019e Pull complete                                                                                  240.0s
+   ✔ 95cfbfe67739 Pull complete                                                                                  240.0s
+   ✔ e8adfb95322d Pull complete                                                                                  240.0s
+   ✔ 73bf0366d627 Pull complete                                                                                  240.1s
+   ✔ 08af2d7d7ec2 Pull complete                                                                                  240.1s
+   ✔ 086c6a12104a Pull complete                                                                                  240.1s
+   ✔ 13a0fd9e312b Pull complete                                                                                  240.2s
+   ✔ 34a986ee3c28 Pull complete                                                                                  240.2s
+   ✔ b08b5eed2a97 Pull complete                                                                                  240.2s
+   ✔ 36b23ba8b2ef Pull complete                                                                                  242.0s
+   ✔ 6503fca807cb Pull complete                                                                                  242.1s
+   ✔ 4f4fb700ef54 Pull complete                                                                                  242.1s
+   ✔ c5d7a7dfd1ec Pull complete                                                                                  564.3s
+   ✔ 69f233e6e030 Pull complete                                                                                  564.3s
+   ✔ ba46f110af16 Pull complete                                                                                  564.3s
+ ✔ datanode Pulled                                                                                               569.3s
+[+] Running 7/7
+ ✔ Network p05-hadoop_default         Created                                                                      0.1s
+ ✔ Volume "p05-hadoop_namenode-data"  Created                                                                      0.0s
+ ✔ Volume "p05-hadoop_datanode-data"  Created                                                                      0.0s
+ ✔ Container namenode                 Started                                                                      1.0s
+ ✔ Container resourcemanager          Started                                                                      0.9s
+ ✔ Container datanode                 Started                                                                      0.8s
+ ✔ Container nodemanager              Started                                                                      1.1s
+PS C:\big_data_proj>
